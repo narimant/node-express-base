@@ -1,8 +1,8 @@
 const express=require('express');
 const app=express();
-const run= ()=>{
+require('./bootstrap')(app)
+require('./routes')(app)
 
-}
 
 module.exports=()=>{
     const port=process.env.APP_PORT
