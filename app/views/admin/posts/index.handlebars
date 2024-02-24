@@ -1,0 +1,45 @@
+   <!-- Page Headings Start -->
+            <div class="row justify-content-between align-items-center mb-10">
+
+                <!-- Page Heading Start -->
+                <div class="col-12 col-lg-auto mb-20">
+                    <div class="page-heading">
+                        <h3 class="title">صفحات <span>/ خالی</span></h3>
+                    </div>
+                </div><!-- Page Heading End -->
+
+
+            </div><!-- Page Headings End -->
+
+      <div class="box-body">
+                            <table class="table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>عنوان</th>
+                                        <th>نویسنده مطلب</th>
+                                        <th>تاریخ ایجاد</th>
+                                        <th> تعداد نمایش</th>
+                                        <th> تنظیمات</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {{#each posts}}
+                                    <tr>
+                                        <th></th>
+                                        <td>{{this.title}}</td>
+                                        <td>{{this.name}}</td>
+                                        <td>{{this.created_at}}</td>
+                                        <td>{{this.views}}</td>
+                                        <td>
+                                            <a href="">حذف</a>
+                                            <a href="">ویرایش</a>
+                                        </td>
+                                    </tr>
+                                    {{/each}}
+                               
+                                </tbody>
+                            </table>
+                        </div>
+
+                        
